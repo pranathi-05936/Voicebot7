@@ -2,8 +2,7 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "functions": {
     "api/chat.py": {
-      "maxDuration": 10,
-      "excludeFiles": "{training/**,dev_server.py,report/**}"
+      "maxDuration": 10
     }
   }
 }
