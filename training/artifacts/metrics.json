@@ -1,0 +1,305 @@
+{
+  "dataset": {
+    "train": 15100,
+    "val": 3100,
+    "test": 5500,
+    "classes": 151,
+    "vocab": 20984
+  },
+  "model_params": 3146392,
+  "frozen_params": 6295200,
+  "hparams": {
+    "emb_dim": 300,
+    "train_dim": 64,
+    "hidden": 192,
+    "layers": 2,
+    "dropout": 0.4
+  },
+  "epochs_run": 20,
+  "train_time_sec": 740.2,
+  "oos_threshold": 0.35000000000000003,
+  "baseline_tfidf_logreg": {
+    "overall_acc": 0.7721818181818182,
+    "in_scope_acc": 0.91,
+    "oos_recall": 0.152,
+    "oos_precision": 0.8941176470588236,
+    "macro_f1": 0.8378278359912182
+  },
+  "bilstm_attention_argmax": {
+    "overall_acc": 0.7876363636363637,
+    "in_scope_acc": 0.9135555555555556,
+    "oos_recall": 0.221,
+    "oos_precision": 0.9567099567099567,
+    "macro_f1": 0.847499462582753
+  },
+  "bilstm_attention_with_threshold": {
+    "overall_acc": 0.8612727272727273,
+    "in_scope_acc": 0.8944444444444445,
+    "oos_recall": 0.712,
+    "oos_precision": 0.7526427061310782,
+    "macro_f1": 0.8890147132077497
+  },
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 3.182784175872803,
+      "val_loss": 1.3692600727081299,
+      "val_in_scope_acc": 0.6953333333333334
+    },
+    {
+      "epoch": 2,
+      "train_loss": 1.7154136639399244,
+      "val_loss": 0.8899215459823608,
+      "val_in_scope_acc": 0.8173333333333334
+    },
+    {
+      "epoch": 3,
+      "train_loss": 1.4007021100631614,
+      "val_loss": 0.7193663120269775,
+      "val_in_scope_acc": 0.867
+    },
+    {
+      "epoch": 4,
+      "train_loss": 1.2523425684859422,
+      "val_loss": 0.6448887586593628,
+      "val_in_scope_acc": 0.879
+    },
+    {
+      "epoch": 5,
+      "train_loss": 1.1567515707015992,
+      "val_loss": 0.5882739424705505,
+      "val_in_scope_acc": 0.8963333333333333
+    },
+    {
+      "epoch": 6,
+      "train_loss": 1.0910075087894666,
+      "val_loss": 0.5932732224464417,
+      "val_in_scope_acc": 0.8896666666666667
+    },
+    {
+      "epoch": 7,
+      "train_loss": 1.0485608275205094,
+      "val_loss": 0.5631914138793945,
+      "val_in_scope_acc": 0.9073333333333333
+    },
+    {
+      "epoch": 8,
+      "train_loss": 1.0157790038917238,
+      "val_loss": 0.5555010437965393,
+      "val_in_scope_acc": 0.899
+    },
+    {
+      "epoch": 9,
+      "train_loss": 0.9961447930020212,
+      "val_loss": 0.5447583198547363,
+      "val_in_scope_acc": 0.901
+    },
+    {
+      "epoch": 10,
+      "train_loss": 0.9815915630353208,
+      "val_loss": 0.5556138157844543,
+      "val_in_scope_acc": 0.906
+    },
+    {
+      "epoch": 11,
+      "train_loss": 0.9496570221793572,
+      "val_loss": 0.524213969707489,
+      "val_in_scope_acc": 0.9113333333333333
+    },
+    {
+      "epoch": 12,
+      "train_loss": 0.9364474614408632,
+      "val_loss": 0.5346655249595642,
+      "val_in_scope_acc": 0.9106666666666666
+    },
+    {
+      "epoch": 13,
+      "train_loss": 0.9284707540549979,
+      "val_loss": 0.5329195857048035,
+      "val_in_scope_acc": 0.91
+    },
+    {
+      "epoch": 14,
+      "train_loss": 0.919522729993656,
+      "val_loss": 0.5315444469451904,
+      "val_in_scope_acc": 0.9126666666666666
+    },
+    {
+      "epoch": 15,
+      "train_loss": 0.9191521973325717,
+      "val_loss": 0.530895471572876,
+      "val_in_scope_acc": 0.909
+    },
+    {
+      "epoch": 16,
+      "train_loss": 0.9151977490431425,
+      "val_loss": 0.549021303653717,
+      "val_in_scope_acc": 0.9113333333333333
+    },
+    {
+      "epoch": 17,
+      "train_loss": 0.9116800137387207,
+      "val_loss": 0.5381197333335876,
+      "val_in_scope_acc": 0.9073333333333333
+    },
+    {
+      "epoch": 18,
+      "train_loss": 0.9022110737554285,
+      "val_loss": 0.5312634706497192,
+      "val_in_scope_acc": 0.9096666666666666
+    },
+    {
+      "epoch": 19,
+      "train_loss": 0.8998114698296351,
+      "val_loss": 0.544632077217102,
+      "val_in_scope_acc": 0.909
+    },
+    {
+      "epoch": 20,
+      "train_loss": 0.8964724702077196,
+      "val_loss": 0.5476282238960266,
+      "val_in_scope_acc": 0.9123333333333333
+    }
+  ],
+  "hardest_intents": [
+    [
+      "yes",
+      0.5666666666666667
+    ],
+    [
+      "distance",
+      0.6
+    ],
+    [
+      "bill_balance",
+      0.6333333333333333
+    ],
+    [
+      "restaurant_reviews",
+      0.6666666666666666
+    ],
+    [
+      "calendar",
+      0.7
+    ],
+    [
+      "goodbye",
+      0.7
+    ],
+    [
+      "play_music",
+      0.7
+    ],
+    [
+      "report_fraud",
+      0.7
+    ]
+  ],
+  "final_rule": {
+    "val": {
+      "overall_acc": 0.8861290322580645,
+      "in_scope_acc": 0.895,
+      "oos_recall": 0.62,
+      "oos_precision": 0.29245283018867924,
+      "macro_f1": 0.9069340500524258
+    },
+    "test": {
+      "overall_acc": 0.8561818181818182,
+      "in_scope_acc": 0.8955555555555555,
+      "oos_recall": 0.679,
+      "oos_precision": 0.7527716186252772,
+      "macro_f1": 0.886291844610513
+    },
+    "hardest_intents": [
+      [
+        "yes",
+        0.5666666666666667
+      ],
+      [
+        "distance",
+        0.6
+      ],
+      [
+        "bill_balance",
+        0.6666666666666666
+      ],
+      [
+        "restaurant_reviews",
+        0.6666666666666666
+      ],
+      [
+        "oos",
+        0.679
+      ],
+      [
+        "calendar",
+        0.7
+      ],
+      [
+        "goodbye",
+        0.7
+      ],
+      [
+        "play_music",
+        0.7
+      ]
+    ],
+    "perfect_intents": 25
+  },
+  "oos_rule": {
+    "threshold": 0.34,
+    "ratio": 5.0
+  },
+  "deployed_numpy": {
+    "argmax": {
+      "overall_acc": 0.7849090909090909,
+      "in_scope_acc": 0.9122222222222223,
+      "oos_recall": 0.212,
+      "oos_precision": 0.9380530973451328,
+      "macro_f1": 0.8468078683055931
+    },
+    "final_rule": {
+      "overall_acc": 0.8461818181818181,
+      "in_scope_acc": 0.8942222222222223,
+      "oos_recall": 0.63,
+      "oos_precision": 0.7159090909090909,
+      "macro_f1": 0.8834527830296655
+    },
+    "max_prob_diff_vs_torch": 2.980232238769531e-07,
+    "hardest_intents": [
+      [
+        "yes",
+        0.4
+      ],
+      [
+        "calculator",
+        0.5333333333333333
+      ],
+      [
+        "oos",
+        0.63
+      ],
+      [
+        "play_music",
+        0.6333333333333333
+      ],
+      [
+        "restaurant_reviews",
+        0.6333333333333333
+      ],
+      [
+        "bill_balance",
+        0.7
+      ],
+      [
+        "distance",
+        0.7
+      ],
+      [
+        "goodbye",
+        0.7
+      ]
+    ],
+    "perfect_intents": 24
+  }
+}

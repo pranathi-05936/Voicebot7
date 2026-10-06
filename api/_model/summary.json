@@ -1,0 +1,32 @@
+{
+  "dataset": {
+    "train": 15100,
+    "val": 3100,
+    "test": 5500,
+    "classes": 151,
+    "vocab": 20984
+  },
+  "trainable_params": 3146392,
+  "frozen_params": 6295200,
+  "baseline_tfidf_logreg": {
+    "overall_acc": 0.7721818181818182,
+    "in_scope_acc": 0.91,
+    "oos_recall": 0.152,
+    "oos_precision": 0.8941176470588236,
+    "macro_f1": 0.8378278359912182
+  },
+  "test": {
+    "overall_acc": 0.8461818181818181,
+    "in_scope_acc": 0.8942222222222223,
+    "oos_recall": 0.63,
+    "oos_precision": 0.7159090909090909,
+    "macro_f1": 0.8834527830296655
+  },
+  "test_argmax": {
+    "overall_acc": 0.7849090909090909,
+    "in_scope_acc": 0.9122222222222223,
+    "oos_recall": 0.212,
+    "oos_precision": 0.9380530973451328,
+    "macro_f1": 0.8468078683055931
+  }
+}
